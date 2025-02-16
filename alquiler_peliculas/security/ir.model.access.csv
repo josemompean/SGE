@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_pelicula_user,Acceso Usuario Película,model_alquiler_pelicula,,1,0,0,0
+access_pelicula_admin,Acceso Administrador Película,model_alquiler_pelicula,,1,1,1,1
+access_categoria_user,Acceso Usuario Categoría,model_alquiler_categoria,,1,0,0,0
+access_categoria_admin,Acceso Administrador Categoría,model_alquiler_categoria,,1,1,1,1
+access_actor_user,Acceso Usuario Actor,model_alquiler_actor,,1,0,0,0
+access_actor_admin,Acceso Administrador Actor,model_alquiler_actor,,1,1,1,1

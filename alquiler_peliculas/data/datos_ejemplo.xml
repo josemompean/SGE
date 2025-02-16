@@ -1,0 +1,15 @@
+<odoo>
+    <record id="categoria_accion" model="alquiler.categoria">
+        <field name="name">Acción</field>
+    </record>
+
+    <record id="pelicula_1" model="alquiler.pelicula">
+        <field name="name">El Padrino</field>
+        <field name="categoria_id" ref="categoria_accion"/>
+    </record>
+
+    <record id="actor_1" model="alquiler.actor">
+        <field name="name">Marlon Brando</field>
+        <field name="pelicula_ids" eval="[(4, ref('pelicula_1'))]"/>
+    </record>
+</odoo>

@@ -1,0 +1,46 @@
+<odoo>
+    <record id="view_pelicula_tree" model="ir.ui.view">
+        <field name="name">pelicula.tree</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="categoria_id"/>
+                <field name="fecha_estreno"/>
+                <field name="disponible"/>
+                <field name="formato"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_pelicula_form" model="ir.ui.view">
+        <field name="name">pelicula.form</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="descripcion"/>
+                    <field name="categoria_id"/>
+                    <field name="fecha_estreno"/>
+                    <field name="duracion"/>
+                    <field name="disponible"/>
+                    <field name="formato"/>
+                    <field name="actor_ids" widget="many2many_tags"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_pelicula_kanban" model="ir.ui.view">
+        <field name="name">pelicula.kanban</field>
+        <field name="model">alquiler.pelicula</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="categoria_id"/>
+                <field name="formato"/>
+            </kanban>
+        </field>
+    </record>
+</odoo>
