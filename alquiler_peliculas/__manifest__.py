@@ -12,6 +12,7 @@
         "views/categoria_views.xml",
         "views/actor_views.xml"
         'views/menu.xml'
+        'report/pelicula_report.xml',  
     ],
     'installable': True,
     'application': True,
