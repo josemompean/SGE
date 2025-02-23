@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_consulta_activity_user,access.consulta.activity.user,model_consulta_activity,group_consulta_user,1,1,1,0
+access_consulta_activity_admin,access.consulta.activity.admin,model_consulta_activity,group_consulta_admin,1,1,1,1
+access_consulta_teacher_user,access.consulta.teacher.user,model_consulta_teacher,group_consulta_user,1,1,1,0
+access_consulta_teacher_admin,access.consulta.teacher.admin,model_consulta_teacher,group_consulta_admin,1,1,1,1
+access_consulta_student_user,access.consulta.student.user,model_consulta_student,group_consulta_user,1,1,1,0
+access_consulta_student_admin,access.consulta.student.admin,model_consulta_student,group_consulta_admin,1,1,1,1

@@ -3,12 +3,12 @@
         <field name="name">alquiler.categoria.form</field>
         <field name="model">alquiler.categoria</field>
         <field name="arch" type="xml">
-            <form>
+            <form string="Categoría">
                 <sheet>
                     <group>
                         <field name="name"/>
                         <field name="descripcion"/>
-                        <field name="pelicula_ids"/>
+                        <field name="pelicula_ids" widget="one2many_list"/>
                     </group>
                 </sheet>
             </form>
@@ -19,8 +19,9 @@
         <field name="name">alquiler.categoria.tree</field>
         <field name="model">alquiler.categoria</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree string="Categorías">
                 <field name="name"/>
+                <field name="descripcion"/>
             </tree>
         </field>
     </record>

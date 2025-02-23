@@ -1,15 +1,16 @@
 <odoo>
     <record id="categoria_accion" model="alquiler.categoria">
         <field name="name">Acción</field>
+        <field name="descripcion">Películas de acción y aventura</field>
     </record>
 
-    <record id="pelicula_1" model="alquiler.pelicula">
-        <field name="name">El Padrino</field>
-        <field name="categoria_id" ref="categoria_accion"/>
+    <record id="categoria_comedia" model="alquiler.categoria">
+        <field name="name">Comedia</field>
+        <field name="descripcion">Películas de comedia y entretenimiento</field>
     </record>
 
-    <record id="actor_1" model="alquiler.actor">
-        <field name="name">Marlon Brando</field>
-        <field name="pelicula_ids" eval="[(4, ref('pelicula_1'))]"/>
+    <record id="categoria_drama" model="alquiler.categoria">
+        <field name="name">Drama</field>
+        <field name="descripcion">Películas de drama y suspenso</field>
     </record>
 </odoo>

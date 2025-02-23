@@ -1,0 +1,14 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Grupo de Administradores -->
+        <record id="group_consulta_admin" model="res.groups">
+            <field name="name">Consulta Administradores</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <!-- Grupo de Usuarios Estándar -->
+        <record id="group_consulta_user" model="res.groups">
+            <field name="name">Consulta Usuarios</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>

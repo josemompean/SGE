@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Acción para Actividades -->
+    <record id="action_consulta_activity" model="ir.actions.act_window">
+        <field name="name">Actividades</field>
+        <field name="res_model">consulta.activity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>Aquí puedes gestionar las actividades o citas.</p>
+        </field>
+    </record>
+
+    <!-- Acción para Profesores -->
+    <record id="action_consulta_teacher" model="ir.actions.act_window">
+        <field name="name">Profesores</field>
+        <field name="res_model">consulta.teacher</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>Aquí puedes gestionar a los profesores o responsables.</p>
+        </field>
+    </record>
+
+    <!-- Acción para Alumnos -->
+    <record id="action_consulta_student" model="ir.actions.act_window">
+        <field name="name">Alumnos</field>
+        <field name="res_model">consulta.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>Aquí puedes gestionar a los alumnos, clientes o pacientes.</p>
+        </field>
+    </record>
+
+    <!-- Menú raíz (sin padre) -->
+    <menuitem id="menu_consulta_root"
+              name="Consulta"
+              sequence="1"/>
+    
+    <!-- Submenús -->
+    <menuitem id="menu_consulta_activity"
+              name="Actividades"
+              parent="menu_consulta_root"
+              action="action_consulta_activity"
+              sequence="2"/>
+    <menuitem id="menu_consulta_teacher"
+              name="Profesores"
+              parent="menu_consulta_root"
+              action="action_consulta_teacher"
+              sequence="3"/>
+    <menuitem id="menu_consulta_student"
+              name="Alumnos"
+              parent="menu_consulta_root"
+              action="action_consulta_student"
+              sequence="4"/>
+</odoo>

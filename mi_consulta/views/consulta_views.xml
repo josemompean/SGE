@@ -1,0 +1,29 @@
+<odoo>
+    <record id="action_consulta_activity" model="ir.actions.act_window">
+        <field name="name">Actividades</field>
+        <field name="res_model">consulta.activity</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_consulta_activity_form" model="ir.ui.view">
+        <field name="name">consulta.activity.form</field>
+        <field name="model">consulta.activity</field>
+        <field name="arch" type="xml">
+            <form string="Actividad">
+                <sheet>
+                    <group>
+                        <field name="name" mode="primary"/>
+                        <field name="date" widget="datetime"/>
+                        <field name="price"/>
+                        <field name="monitor"/>
+                        <field name="nre" placeholder="Sólo dígitos"/>
+                    </group>
+                    <group>
+                        <field name="teacher_id"/>
+                        <field name="student_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

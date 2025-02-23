@@ -1,3 +1,3 @@
-from . import actor
-from . import categoria
 from . import pelicula
+from . import categoria
+from . import actor

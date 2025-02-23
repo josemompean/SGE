@@ -1,0 +1,18 @@
+<odoo>
+    <record id="demo_teacher_1" model="consulta.teacher">
+        <field name="name">Profesor Juan</field>
+    </record>
+    
+    <record id="demo_student_1" model="consulta.student">
+        <field name="name">Alumno Ana</field>
+    </record>
+    
+    <record id="demo_activity_1" model="consulta.activity">
+        <field name="name">Consulta de Nutrición</field>
+        <field name="date">2025-03-15 10:00:00</field>
+        <field name="price">15</field>  <!-- Eliminadas comillas simples en el valor numérico -->
+        <field name="nre">12345</field>
+        <field name="teacher_id" ref="demo_teacher_1"/>
+        <field name="student_ids" eval="[(6, 0, [ref('demo_student_1')])]"/>
+    </record>
+</odoo>
